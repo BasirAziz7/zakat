@@ -1,5 +1,9 @@
 <?php
-
+use App\Http\Controllers\LaporanSejarahController;
+use App\Http\Controllers\MerchantController;
+use App\Http\Controllers\PenerimaZakatController;
+use App\Http\Controllers\PungutanZakatController;
+use App\Http\Controllers\FailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +26,15 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::resource('laporansejarahs',LaporanSejarahController::class);
+
+Route::resource('fails',FailController::class);
+
+Route::resource('penerimazakats',PenerimaZakatController::class);
+
+Route::resource('pungutanzakats',PungutanZakatController::class);
+
+Route::resource('merchants',MerchantController::class);
+
+
