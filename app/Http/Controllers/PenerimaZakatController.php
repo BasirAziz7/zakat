@@ -41,7 +41,6 @@ class PenerimaZakatController extends Controller
         $validated = $request->validate([
            
             'user_id'  => 'required',
-            'kategori'=> 'required',
             'alamat'=> 'required', 
             'jenis_bantuan'=> 'required',
             'status'=> 'required',
@@ -51,7 +50,6 @@ class PenerimaZakatController extends Controller
  
         $penerimazakat = new PenerimaZakat;
         $penerimazakat ->user_id= $request->user_id;
-        $penerimazakat ->kategori= $request->kategori;
         $penerimazakat ->alamat= $request->alamat;
         $penerimazakat ->jenis_bantuan= $request->jenis_bantuan;
         $penerimazakat ->status= $request->status;
@@ -97,7 +95,6 @@ class PenerimaZakatController extends Controller
     public function update(Request $request, PenerimaZakat $penerimaZakat)
     {
         $penerimazakat ->user_id= $request->user_id;
-        $penerimazakat ->kategori= $request->kategori;
         $penerimazakat ->alamat= $request->alamat;
         $penerimazakat ->jenis_bantuan= $request->jenis_bantuan;
         $penerimazakat ->status= $request->status;

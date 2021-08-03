@@ -16,7 +16,6 @@ class CreatePungutanZakatsTable extends Migration
         Schema::create('pungutan_zakats', function (Blueprint $table) {
             $table->id();
             $table->string('pegawai_id');
-            $table->string('kategori');
             $table->float('jumlah');
             $table->string('tarikh');
             $table->string('jenis_pungutan');

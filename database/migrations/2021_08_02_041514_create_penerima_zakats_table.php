@@ -16,7 +16,6 @@ class CreatePenerimaZakatsTable extends Migration
         Schema::create('penerima_zakats', function (Blueprint $table) {
             $table->id();
             $table->foreignid('user_id');
-            $table->string('kategori');
             $table->string('alamat');
             $table->string('jenis_bantuan');
             $table->string('status');

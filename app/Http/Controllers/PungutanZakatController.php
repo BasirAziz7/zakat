@@ -41,7 +41,6 @@ class PungutanZakatController extends Controller
         $validated = $request->validate([
            
             'pegawai_id'  => 'required',
-            'kategori'=> 'required',
             'jumlah'=> 'required', 
             'tarikh'=> 'required',
             'jenis_pungutan'=> 'required',
@@ -49,7 +48,6 @@ class PungutanZakatController extends Controller
  
         $pungutanzakat = new PungutanZakat;
         $pungutanzakat ->pegawai_id= $request->pegawai_id;
-        $pungutanzakat ->kategori= $request->kategori;
         $pungutanzakat ->jumlah= $request->jumlah;
         $pungutanzakat ->tarikh= $request->tarikh;
         $pungutanzakat ->jenis_pungutan= $request->jenis_pungutan;
@@ -92,7 +90,6 @@ class PungutanZakatController extends Controller
     public function update(Request $request, PungutanZakat $pungutanZakat)
     {
         $pungutanzakat ->pegawai_id= $request->pegawai_id;
-        $pungutanzakat ->kategori= $request->kategori;
         $pungutanzakat ->jumlah= $request->jumlah;
         $pungutanzakat ->tarikh= $request->tarikh;
         $pungutanzakat ->jenis_pungutan= $request->jenis_pungutan;

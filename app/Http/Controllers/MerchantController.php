@@ -15,8 +15,12 @@ class MerchantController extends Controller
     public function index()
     {
         $merchants = Merchant::all();
+
+        // $data_basir = Merchant::all();
+
         return view('merchant.index',[
-            'merchants'=> $merchants
+            'merchants'=> $merchants,
+            // 'data_basir'=> $data_basir,
         ]); 
     }
 
@@ -58,6 +62,7 @@ class MerchantController extends Controller
         $merchant ->jumlah= $request->jumlah;
         $merchant ->status= $request->status;
         
+
         $merchant->save(); 
         return redirect('/merchants');
     }
@@ -69,9 +74,12 @@ class MerchantController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Merchant $merchant)
-    {
+    {     
+        
         return view('merchant.show', [
-            'merchant'=> $merchant
+            'merchant'=> $merchant,
+            // 'data_basir'=> $data_basir,
+
         ]);
     }
 
