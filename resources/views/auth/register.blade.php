@@ -1,14 +1,15 @@
+
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                <x-application-logo class="" />
             </a>
         </x-slot>
-
+        
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
+        <img src="https://www.zakatselangor.com.my/wp-content/uploads/2018/11/favicon.png" >
         <form method="POST" action="{{ route('register') }}">
             @csrf
 
@@ -57,3 +58,4 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+
