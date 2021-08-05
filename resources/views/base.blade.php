@@ -68,6 +68,16 @@
   width: 100%;
   height: 500px;
 }
+
+#chartdiv1{
+  width: 100%;
+  height: 500px;
+}
+#chartdiv2{
+  width: 100%;
+  height: 500px;
+}
+
   </style>
   <script>
     (function(a, s, y, n, c, h, i, d, e) {
@@ -650,7 +660,7 @@
         </li>
         <li class="nav-item">
           <hr class="horizontal dark" />
-          <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6">DOCS</h6>
+          <h6 class="ps-4  ms-2 text-uppercase text-xs font-weight-bolder opacity-6"></h6>
         </li>
         <!-- <li class="nav-item">
           <a data-bs-toggle="collapse" href="#basicExamples" class="nav-link " aria-controls="basicExamples" role="button" aria-expanded="false">
@@ -896,7 +906,7 @@
       </ul>
   </br> </br> </br> </br> </br>
     </div>
-    <div class="sidenav-footer mx-3 mt-3 pt-3">
+    <!-- <div class="sidenav-footer mx-3 mt-3 pt-3">
       <div class="card card-background shadow-none card-background-mask-secondary" id="sidenavCard">
         <div class="full-background" style="background-image: url('../../assets/img/curved-images/white-curved.jpeg')"></div>
         <div class="card-body text-start p-3 w-100">
@@ -910,12 +920,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </aside>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <!-- Navbar -->
-    <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
-      <div class="container-fluid py-1 px-3">
+    <nav style="padding: 0 0 0 0 !important; border: solid 2px green;" class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none z-index-sticky" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid py-1 px-3" style="background-color: yellow;">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
             <li class="breadcrumb-item text-sm">
