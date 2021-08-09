@@ -243,7 +243,7 @@ label.textAlign = "middle";
 label.horizontalCenter = "middle";
 label.verticalCenter = "middle";
 label.adapter.add("text", function(text, target){
-  return "[font-size:18px]Jumlah Bantuan Mengikut Merchant[/]:\n[bold font-size:30px]" ;
+  return "[font-size:18px]Jumlah Bantuan\n Mengikut Merchant[/]:\n[bold font-size:30px]" ;
 })
 
 }); // end am4core.ready()
@@ -318,7 +318,7 @@ label.textAlign = "middle";
 label.horizontalCenter = "middle";
 label.verticalCenter = "middle";
 label.adapter.add("text", function(text, target){
-  return "[font-size:18px]Jumlah agihan Mengikut Merchant (K) [/]:\n[bold font-size:30px]" + pieSeries.dataItem.values.value.sum + "[/]";
+  return "[font-size:18px]Jumlah agihan\n Mengikut Merchant (K) [/]:\n[bold font-size:30px]" + pieSeries.dataItem.values.value.sum + "[/]";
 })
 
 }); // end am4core.ready()
